@@ -184,17 +184,17 @@ export class DateTimePickerModal extends React.PureComponent {
               // the inline picker is not rendered correctly if in datetime mode. Explicitly setting the height
               // of the native picker to 370 fixes this issue. This is dependent on the other styles applied to the picker
               // and may need to be adjusted if the other styles are changed.
-              style={[
-                {
-                  height:
-                    !customPickerIOS &&
-                    otherProps.mode === "datetime" &&
-                    display === "inline"
-                      ? 370
-                      : undefined,
-                },
-                pickerComponentStyleIOS,
-              ]}
+              // style={[
+              //   {
+              //     height:
+              //       !customPickerIOS &&
+              //       otherProps.mode === "datetime" &&
+              //       display === "inline"
+              //         ? 370
+              //         : undefined,
+              //   },
+              //   pickerComponentStyleIOS,
+              // ]}
             />
           </View>
           <ConfirmButtonComponent
